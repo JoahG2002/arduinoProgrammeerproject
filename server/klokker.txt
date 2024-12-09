@@ -1,0 +1,18 @@
+versies inlevern
+
+Om foutmelding heen werken
+
+in pgadmin, werkgever -> werkgever_id
+
+solderen was lasitg, geen echte arduino
+avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00
+
+/docs
+
+Computersystemen niet geregistreerd als minor EC 6, keuzevak
+
+Goedemiddag mevrouw Sigvardsdotter,
+
+
+Joah Goedhart (14307170),
+Derdejaarsstudent Informatiekunde
