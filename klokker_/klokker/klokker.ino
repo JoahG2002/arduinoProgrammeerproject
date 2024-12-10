@@ -145,23 +145,11 @@ void verwerk_serverreactie()
   }
 
   String serverreactie = Serial.readStringUntil('\n');
-
-  Serial.print("serverreactie: ");
-  Serial.println(serverreactie);
   
   if (serverreactie == "-1")
   {
     geef_string_weer_op_lcd("Registratiefout!", 1);
     
-    knipper_ledlampje(POORT_LEDLAMPJE_ROOD);
-
-    return;
-  }
-
-  if (serverreactie[0] == 'D')
-  {
-    geef_string_weer_op_lcd("Dienst te kort!", 1); // Dienst te kort.
-
     knipper_ledlampje(POORT_LEDLAMPJE_ROOD);
 
     return;

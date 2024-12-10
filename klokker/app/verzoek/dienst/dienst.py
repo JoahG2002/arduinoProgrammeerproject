@@ -32,4 +32,3 @@ def verzoek_dienstregistratie(werknemer_id: str, start_dienst: float, eind_diens
         return 0.0, -1
 
     return reactie_dienst_registratie.json()["euros_verdiend"], 0
-
