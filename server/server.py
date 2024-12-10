@@ -4,6 +4,7 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from server_.routers.dienst import dienst
 from server_.routers.werknemer import werknemer
 from server_.databasis.databasis import Base, engine
 from server_.ondersteuning.run import geef_serverconfiguratie, Serverconfiguratie
@@ -22,6 +23,7 @@ app.add_middleware(
 )
 
 app.include_router(werknemer.router)
+app.include_router(dienst.router)
 
 
 @app.get('/')

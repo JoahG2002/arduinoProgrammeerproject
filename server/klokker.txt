@@ -1,18 +1,28 @@
-versies inlevern
-
-Om foutmelding heen werken
-
-in pgadmin, werkgever -> werkgever_id
-
-solderen was lasitg, geen echte arduino
+solderen was lasitg, geen echte arduino (converter, wachten -> nieuw scherm met ingebouwd -> helderheid te hoog, met schroef opgelost)
 avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00
 
-/docs
+http://127.0.0.1:8000/docs
 
-Computersystemen niet geregistreerd als minor EC 6, keuzevak
+schema's
 
-Goedemiddag mevrouw Sigvardsdotter,
+MFRC522-defect na meerdere, diverse toesten -> dan maar sonar? eur
 
+moet verbonden zijn met de laptop, omdat de Aruino zelf geen WiFi ondersteunt.
 
-Joah Goedhart (14307170),
-Derdejaarsstudent Informatiekunde
+Aruino heeft zelf geen klok, dus in Python of elders -> time.time() for UNIX-tijdstempel.
+
+---------------------------------------------------------------------
+eerste server uitleggen.
+python klokker.py
+
+OPNEMEN! OBS EN TELEFOON! time.time()
+
+BLAUW OOK ALS INKLOK IN OPGESLAGEN
+
+6 MIN
+WAT ZIJN DE DOELEN
+WIE GEBRUIKT
+SITUATIES
+GEBRUIK LATEN ZIEN
+BIJZONDERHEDEN
+ALLE FEATURES

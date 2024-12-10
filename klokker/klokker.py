@@ -22,8 +22,6 @@ def main() -> None:
 
                 continue
 
-            sys.stdout.write(f"{'-' * 52}\nArduino data: \"{data_verstuurd_door_arduino}\"\n")
-
             dienstdata: list[str] = data_verstuurd_door_arduino[1:].split(',')
             werknemer_id: str = dienstdata[0]
             start_dienst: float = float(dienstdata[1])
@@ -32,9 +30,7 @@ def main() -> None:
             uren_gewerkt, overige_minuten = bereken_uren_en_minuten_gewerkt(start_dienst, eind_dienst)
 
             if (uren_gewerkt < 0) and (overige_minuten < 15):
-                arduinomanager.schrijf_naar_arduino(
-                    "Dienst te kort."
-                )
+                arduinomanager.schrijf_naar_arduino("Dienst te kort.")
 
                 continue
 
@@ -42,7 +38,7 @@ def main() -> None:
 
             if succescode == 0:
                 arduinomanager.schrijf_naar_arduino(
-                    f"{uren_gewerkt} h {overige_minuten} min -> {euros_verdiend} EUR"
+                    f"{uren_gewerkt} h {overige_minuten} min@+{euros_verdiend} EUR"
                 )
             else:
                 arduinomanager.schrijf_naar_arduino("-1")

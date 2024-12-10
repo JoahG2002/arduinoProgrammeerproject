@@ -27,6 +27,9 @@ async def registreer_dienst(registratieverzoek_dienst: RegistratieverzoekDienst,
 
     data_werknemer: Werknemertabel = geef_werknemerdata(registratieverzoek_dienst.werknemer_id, databasis)
 
+    if not data_werknemer:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Werknemer niet gevonden.")
+
     aantal_nachturen: int = geef_aantal_nachturen(starttijd_dienst, eindtijd_dienst)
     is_feestdag_: bool = is_feestdag(starttijd_dienst)
 

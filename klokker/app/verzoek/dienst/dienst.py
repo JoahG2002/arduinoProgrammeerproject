@@ -1,4 +1,3 @@
-import sys
 import requests
 
 from requests import Response, RequestException
@@ -18,11 +17,6 @@ def verzoek_dienstregistratie(werknemer_id: str, start_dienst: float, eind_diens
                 "start_dienst": start_dienst,
                 "eind_dienst": eind_dienst
             }
-        )
-
-        sys.stdout.write(
-            f"[VERZOEK]\t{urls.KLOKKERSERVER}/werknemer/registreer-dienst"
-            f" {reactie_dienst_registratie.status_code}\n"
         )
 
     except RequestException:
