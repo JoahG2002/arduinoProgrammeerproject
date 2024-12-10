@@ -20,13 +20,13 @@ class Arduinomanager:
         """
         Geeft de uitvoer van de verbonden Arduino terug als string.
         """
-        return self._verbinding.readline().decode("utf-8").strip()
+        return self._verbinding.readline().decode("ascii").strip()
 
     def schrijf_naar_arduino(self, string: str) -> None:
         """
         Schrijft een string naar de verbonden Arduino als bytes.
         """
-        self._verbinding.write(string.encode("utf-8"))
+        self._verbinding.write(string.encode("ascii"))
 
     def verbreek_arduinoverbinding(self) -> None:
         """

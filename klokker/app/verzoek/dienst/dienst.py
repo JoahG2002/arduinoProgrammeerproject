@@ -1,3 +1,5 @@
+import sys
+
 import requests
 
 from requests import Response, RequestException
@@ -11,12 +13,16 @@ def verzoek_dienstregistratie(werknemer_id: str, start_dienst: float, eind_diens
     """
     try:
         reactie_dienst_registratie: Response = requests.put(
-            f"{urls.KLOKKERSERVER}/dienst/registreer-dienst",
+            f"{urls.KLOKKERSERVER}/dienst/registreer",
             json={
                 "werknemer_id": werknemer_id,
                 "start_dienst": start_dienst,
                 "eind_dienst": eind_dienst
             }
+        )
+
+        sys.stdout.write(
+            f"[VERZOEK]\tPUT {urls.KLOKKERSERVER}/dienst/registreer {reactie_dienst_registratie.status_code}\n"
         )
 
     except RequestException:

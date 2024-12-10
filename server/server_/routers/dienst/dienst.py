@@ -14,7 +14,7 @@ from ...databasis.model import Diensttabel, Werknemertabel
 router: APIRouter = APIRouter(tags=["Dienst"])  # documentation title
 
 
-@router.put("/dienst/registreer-dienst", status_code=status.HTTP_201_CREATED, response_model=CreatieDienst)
+@router.put("/dienst/registreer", status_code=status.HTTP_201_CREATED, response_model=CreatieDienst)
 async def registreer_dienst(registratieverzoek_dienst: RegistratieverzoekDienst,
                             databasis: Session = Depends(geef_databasis)) -> CreatieDienst:
     """
@@ -25,7 +25,7 @@ async def registreer_dienst(registratieverzoek_dienst: RegistratieverzoekDienst,
     starttijd_dienst: datetime.datetime = datetime.datetime.fromtimestamp(registratieverzoek_dienst.start_dienst)
     eindtijd_dienst: datetime.datetime = datetime.datetime.fromtimestamp(registratieverzoek_dienst.eind_dienst)
 
-    data_werknemer: Werknemertabel = geef_werknemerdata(registratieverzoek_dienst.werknemer_id, databasis)
+    data_werknemer: Werknemertabel | None = geef_werknemerdata(registratieverzoek_dienst.werknemer_id, databasis)
 
     if not data_werknemer:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Werknemer niet gevonden.")
