@@ -1,6 +1,6 @@
 
 # Terugkoppeling coderecensie
-<naam1, naam2>
+Ohtaro Mitsuhashi & Sebastiaan van Daalen
 
 ### Probleem 1
 De led-fading gebruikt een for-loop met delay — wat blokkerend werkt en de prestaties van de applicatie negatief beïnvloedt. De oplossing hiervoor zou het gebruik van niet-blokkerende timers met `millis()` in plaats van `delay()`. Deze aanpak maakt de led-fading efficiënter en voorkomt blokkering — maar maakt de code complexer.
