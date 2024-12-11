@@ -56,4 +56,6 @@ _Let op_: het is niet gelukt de zesminutenlimiet te volgen (9 min 21 s). Hieraan
 Tenslotte: `pip install -r requirements.txt`.
 
 # Dankbetuiging
-
+- MFRC522 Library: De RFID-lezer code gebruikt de MFRC522 Arduino library, copyright 2014-2021 by Miguel Balboa. Deze is beschikbaar onder de MIT-licentie.
+- LiquidCrystal_I2C Library: De LCD-scherm code maakt gebruik van de LiquidCrystal_I2C library, copyright by John Rickman. Deze is beschikbaar onder de GNU General Public License v2.0.
+- NewPing Library: De code voor de ultrasone sensor maakt gebruik van de NewPing library, copyright by Tim Eckel. Deze is beschikbaar onder de GNU General Public License v3.0.
