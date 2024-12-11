@@ -1,6 +1,7 @@
 # **KLOKKER**
 
 ![Alternative Text](inlokkerProgrammeerprojectArduino.png)
+![Alternative Text](PXL_20241209_155214328.jpg)
 
 # Terugkoppeling coderecensie
 <naam1, naam2>
