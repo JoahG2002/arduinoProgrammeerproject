@@ -12,19 +12,19 @@ De video in de `README.md` geeft een uitgebreid overzicht van alle functionalite
 ## Hoogtepunten van de Applicatie
 
 ### 1. **Inklokfunctionaliteit met sonarsensor**
-- **Wat:** Het inkloksysteem herkent medewerkers via een RFID-tag en controleert op aanwezigheid met een sonarsensor. 
-- **Waarom bijzonder:** Dit voegt een extra verificatielaag toe door zowel fysieke aanwezigheid als de juiste identificatie te controleren.
-- **Relevant:** Zie `loop()` in `main.ino` voor de logica en implementatie.
+- **Wat:** het inkloksysteem herkent medewerkers via een RFID-tag of hand en controleert op aanwezigheid met een sonarsensor. 
+- **Waarom bijzonder:** dit voegt een extra verificatielaag toe door zowel fysieke aanwezigheid als de juiste identificatie te controleren.
+- **Relevant:** zie `loop()` in `klokker.ino` voor de logica en implementatie.
 
-### 2. **Automatische Uurregistratie en Berekeningen**
-- **Wat:** Het systeem berekent gewerkte uren, inclusief toeslagen voor feestdagen en avonduren, en registreert deze in een PostgreSQL-database.
-- **Waarom bijzonder:** De automatische integratie met feestdagen en rollen is zeldzaam in eenvoudige Arduino-gebaseerde systemen.
-- **Relevant:** Zie de `calculate_working_hours()`- en `add_bonus()`-functies in `main.py`.
+### 2. **Automatische uurregistratie en berekeningen**
+- **Wat:** het systeem berekent gewerkte uren, inclusief toeslagen voor feestdagen en avonduren, en registreert deze in een PostgreSQL-database.
+- **Waarom bijzonder:** de automatische integratie met feestdagen en rollen is zeldzaam in eenvoudige Arduino-gebaseerde systemen.
+- **Relevant:** zie de `calculate_working_hours()`- en `add_bonus()`-functies in `main.py`.
 
 ### 3. **Heldere Feedback met LCD-scherm**
-- **Wat:** Het lcd-scherm toont direct feedback zoals "Ingeklokt!" en werktijden met verdiensten (`x uur -> y EUR`).
-- **Waarom bijzonder:** De eenvoud en duidelijkheid maken het gebruiksvriendelijk voor werknemers.
-- **Relevant:** Zie de implementatie van `geef_string_weer_op_lcd()` in de Arduino-code.
+- **Wat:** het lcd-scherm toont direct feedback zoals _"Ingeklokt!"_ en werktijden met verdiensten (`x uur -> y EUR`).
+- **Waarom bijzonder:** de eenvoud en duidelijkheid maken het gebruiksvriendelijk voor werknemers.
+- **Relevant:** zie de implementatie van `geef_string_weer_op_lcd()` in de Arduino-code.
 
 ---
 
@@ -40,8 +40,8 @@ De video in de `README.md` geeft een uitgebreid overzicht van alle functionalite
 - **Wat was niet handig?** Mijn eerste idee was een eenvoudige Flask-app. Dit bleek lastig bij schaalbaarheid en integratie met asynchrone taken zoals dataverwerking.
 - **Waarom is FastAPI beter?** FastAPI is sneller en flexibeler. Het helpt ook om te voldoen aan moderne API-standaarden zoals OpenAPI.
 
-### 3. **RFID- en Sonarcombinatie**
-- **Waarom deze beslissing?** Alleen RFID was vatbaar voor misbruik (bijvoorbeeld iemand die zijn tag aan een collega geeft). De toevoeging van een sonarsensor voorkomt dit door fysieke aanwezigheid te eisen.
+### 3. **Hand- en sonarcombinatie**
+- **Waarom deze beslissing?** De rfid-522-taglezer is defect gebleken uit meerdere toetsen. De toevoeging van een sonarsensor voorkomt dit door fysieke aanwezigheid te eisen.
 - **Wat was niet handig?** Het idee om alleen RFID te gebruiken maakte het systeem onbetrouwbaar.
 - **Waarom is de nieuwe oplossing beter?** Dit systeem biedt een unieke combinatie van veiligheid en gebruiksgemak.
 
