@@ -48,4 +48,4 @@ De video in de `README.md` geeft een uitgebreid overzicht van alle functionalite
 ---
 
 ## Conclusie
-Deze lijst benadrukt wat mijn project bijzonder maakt en legt uit waarom de ontwerpkeuzes de beste oplossing waren voor het probleem. De bovenstaande aspecten vormen de kern van mijn project en verdienen extra aandacht tijdens de beoordeling.
+Deze lijst benadrukt wat mijn project bijzonder maakt en legt uit waarom de ontwerpkeuzes de beste oplossing waren voor het probleem. De bovenstaande aspecten vormen de kern van mijn project en verdienen extra aandacht tijdens de beoordeling. Bekijk de video!
