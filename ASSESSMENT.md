@@ -4,14 +4,14 @@ Dit document biedt een overzicht van de belangrijkste aspecten van mijn project,
 
 ---
 
-## Bekijk de Video
-De video in de README.md geeft een uitgebreid overzicht van alle functionaliteiten en eigenschappen van mijn project. Hoewel de video iets langer is dan de richtlijn, bevat deze essentiële toelichtingen over ontwerpkeuzes en implementaties. Ik raad aan deze te bekijken voor een volledig begrip van het project.
+## **Bekijk de video**
+De video in de `README.md` geeft een uitgebreid overzicht van alle functionaliteiten en eigenschappen van mijn project. Hoewel de video iets langer is dan de richtlijn, bevat deze essentiële toelichtingen over ontwerpkeuzes en implementaties. Ik raad aan deze te bekijken voor een volledig begrip van het project. Het bekijken van de video is *_essentieel_* voor het begrip van Klokker. 
 
 ---
 
 ## Hoogtepunten van de Applicatie
 
-### 1. **Inklokfunctionaliteit met RFID-tag en Sonarsensor**
+### 1. **Inklokfunctionaliteit met sonarsensor**
 - **Wat:** Het inkloksysteem herkent medewerkers via een RFID-tag en controleert op aanwezigheid met een sonarsensor. 
 - **Waarom bijzonder:** Dit voegt een extra verificatielaag toe door zowel fysieke aanwezigheid als de juiste identificatie te controleren.
 - **Relevant:** Zie `loop()` in `main.ino` voor de logica en implementatie.
