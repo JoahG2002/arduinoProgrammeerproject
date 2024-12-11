@@ -2,6 +2,8 @@
 
 ![Alternative Text](inlokkerProgrammeerprojectArduino.png)
 ![Alternative Text](PXL_20241209_155214328.jpg)
+![Alternative Text](ScreenshotKlokker.png)
+![Alternative Text](fastApiRouters.png)
 
 # Terugkoppeling coderecensie
 <naam1, naam2>
