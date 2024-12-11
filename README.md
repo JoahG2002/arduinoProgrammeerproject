@@ -15,15 +15,6 @@ Het gebruik van`String.h`: `Strings` gebruiken veel meer werkgeheugen dan `const
 ### Probleem 4
 De gehardcode limiet werknemers (`Werknemer werknemers[10];`): het aantal werknemers dat zou kunnen inklokken is hierdoor beperkt tot de waarde die staat gehardcoded in de broncode (het `.ino`-bestand). Hoewel deze feedback hout snijdt, is het niet zou makkelijk als het lijkt om een alternatief te implementeren: tijdens de productie van het product is reeds gepoogd C++'s `std::vector` te gebruiken, maar Arduino ondersteunt deze headerbestanden niet. Het is ook om deze reden dat Arduino `String.h` gebruikt in plaats van C++'s _'echte'_ `<string.h>`. Wederom zou het programmeren herschreven moeten worden in C++ in plaats van de huidige Arduino-abractietaal.
 
-Oplossing:
-
-Gebruik c-strings (char[]) in plaats van de String klasse.
-
-Afweging:
-
-Hoewel c-strings efficiënter zijn in termen van geheugenbeheer, zijn ze lastiger te gebruiken omdat ze handmatig beheer van de lengte en nulterminatie vereisen.
-
-
 # Screencast (videouitleg project)
 _Let op_: het is niet gelukt de zesminutenlimiet te volgen (9 min 21 s). Hieraan ligt ten grondslag dat dit project in feite twee projecten is: een functionerend Arduino-inkloksysteem met een volledig functionerende FastAPI-server als backend. Ondanks het feit dat de video is versneld, was het onmogelijk iedere eigenschap voldoende aan het licht te brengen. In de opdrachtbeschrijving zelf staat immers: _"Always show all features: anything that’s not in the video does not exist."_ Gelieve begrip te hebben voor de omvang van dit project ten aanzien van de opgelegde tijdlimiet.
 
