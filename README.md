@@ -1,4 +1,4 @@
-# **KLOKKER: de Simpele oplossing voor arbeidsuurregistratie in het mkb**
+# **KLOKKER: de simpele oplossing voor arbeidsuurregistratie in het mkb**
 
 Midden- en kleinbedrijven (mkb'ers) vormen de ruggengraat van de Nederlandse economie. Toch kampen veel van deze bedrijven — zoals viskramen, fietsenmakers en dönerzaken — met een gemeenschappelijk probleem: het nauwkeurig bijhouden van arbeidsuren. Traditionele methoden zoals papieren notities of tools als Excel en Google Sheets blijken vaak foutgevoelig en kunnen zelfs misbruikt worden. Met Klokker is dat probleem verleden tijd.
 
