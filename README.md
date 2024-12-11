@@ -1,4 +1,24 @@
-# **KLOKKER**
+# **KLOKKER: de Simpele oplossing voor arbeidsuurregistratie in het mkb**
+
+Midden- en kleinbedrijven (mkb'ers) vormen de ruggengraat van de Nederlandse economie. Toch kampen veel van deze bedrijven — zoals viskramen, fietsenmakers en dönerzaken — met een gemeenschappelijk probleem: het nauwkeurig bijhouden van arbeidsuren. Traditionele methoden zoals papieren notities of tools als Excel en Google Sheets blijken vaak foutgevoelig en kunnen zelfs misbruikt worden. Met Klokker is dat probleem verleden tijd.
+
+### Wat is Klokker?
+Klokker is een innovatief, gebruiksvriendelijk inkloksysteem dat speciaal is ontwikkeld voor mkb-bedrijven. Het systeem combineert een compact apparaatje met moderne technologie. Het metalen of plastic kastje bevat een ledlampje, een tagplatform en een lcd-scherm. Hiermee kunnen werknemers eenvoudig in- en uitklokken, terwijl het scherm duidelijke feedback geeft, zoals:
+`5 uur 23 min -> €84,23` verdiend.
+
+Daarnaast communiceert Klokker moeiteloos met een PostgreSQL-database via een server, zodat werkgevers altijd toegang hebben tot real-time data over arbeidsuren en loonkosten.
+
+### Voor wie is Klokker geschikt?
+Klokker is ontworpen met het mkb in gedachten. Het is ideaal voor bedrijven met een gevarieerd personeelsbestand, zoals studenten met een bijbaan, horecamedewerkers en winkelpersoneel. Voor werkgevers biedt Klokker niet alleen overzicht, maar ook vertrouwen in de nauwkeurigheid van de gegevens.
+
+### Waarom kiezen voor Klokker?
+Klokker onderscheidt zich van andere inkloksystemen door zijn eenvoud en slimme functies. Het systeem biedt:
+
+- Directe feedback: het lcd-scherm laat werknemers meteen zien of hun uren zijn geregistreerd.
+- Automatische aanpassingen: het systeem houdt rekening met feestdagen, toeslagen voor avonduren en het type functie van de werknemer (bijvoorbeeld manager of schoonmaker).
+Betrouwbare gegevensopslag: alle data wordt veilig opgeslagen in een PostgreSQL-database, toegankelijk voor werkgevers wanneer nodig.
+
+Met Klokker kies je voor transparantie, efficiëntie en eenvoud. De arbeidsurenregistratie was nog nooit zo makkelijk!
 
 ![Alternative Text](inlokkerProgrammeerprojectArduino.png)
 ![Alternative Text](PXL_20241209_155214328.jpg)
