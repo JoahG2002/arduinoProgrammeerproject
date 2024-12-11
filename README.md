@@ -1,5 +1,7 @@
 # **KLOKKER**
 
+![Alternative Text](inlokkerProgrammeerprojectArduino.png)
+
 # Terugkoppeling coderecensie
 <naam1, naam2>
 
