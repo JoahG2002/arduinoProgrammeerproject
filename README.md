@@ -34,7 +34,7 @@ _Let op_: het is niet gelukt de zesminutenlimiet te volgen (9 min 21 s). Hieraan
 ### 1. Vereisten
 - Python 3.10+ (te downloaden via python.org);
 - PostgreSQL 13+ (te downloaden via postgresql.org);
-- Arduino IDE (te downloaden via arduino.cc);
+- Arduino-ide (te downloaden via arduino.cc);
 - Git (voor het klonen van de repository);
 - een Arduino-compatibele microcontroller met de juiste componenten (zoals een RFID-lezer, sonar (Ultrasonic Sensor HC-SR04) en lcd-scherm (I2C LCD 16x2).
 
